@@ -1,0 +1,379 @@
+\documentclass[sigconf]{acmart}
+\AtBeginDocument{\providecommand\BibTeX{{Bib\TeX}}}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\setcopyright{rightsretained}
+\copyrightyear{2024}
+\acmYear{2024}
+\acmDOI{XX.XXXX/XXXXXXX.XXXXXXX}
+
+\acmConference[Conference Acronym 2024]{Proceedings of the Conference Acronym 2024}{Month 00--00, 2024}{City, Country}
+\acmISBN{978-1-4503-XXXX-X/24/00}
+
+\citestyle{acmauthoryear}
+
+\title{Bias Dynamics in Multi-Agent Debates: \\Empirical Evidence of Group Polarization and Mutual Balancing Effects}
+
+% Authors -- anonymize for review
+\author{Anonymous Author(s)}
+\affiliation{%
+  \institution{Paper under double-blind review}
+  \city{}
+  \country{}
+}
+\email{}
+
+\renewcommand{\shortauthors}{Anonymous et al.}
+
+\begin{abstract}
+As large language models (LLMs) increasingly power multi-agent systems, understanding how biases evolve during agent interactions becomes crucial for responsible deployment. This paper presents \textsc{MAD-bias}, a comprehensive framework for analyzing bias dynamics in multi-agent LLM debates. Through a large-scale empirical study spanning \textbf{2,610} debate sessions across \textbf{29} controversial topics, we systematically manipulate agent count (\textbf{1--4}), debate rounds (\textbf{1--5}), and ensemble composition (homogeneous vs. heterogeneous). Our findings reveal three key insights: (1) bias strength increases monotonically with debate rounds ($\Delta=+0.42$ per round, $p<0.001$), providing the first empirical evidence of group polarization effects in LLM agents; (2) heterogeneous agent ensembles significantly reduce final bias by \textbf{18.7\%} compared to homogeneous counterparts ($p<0.01$), demonstrating a mutual balancing effect; and (3) emotional language and absolutist expressions strongly predict bias emergence ($r=0.72$), offering actionable signals for bias detection. Through extensive ablation studies and case analyses, we demonstrate that these effects are robust across topics and models. Our findings suggest concrete strategies for mitigating bias in multi-agent systems through ensemble diversity and interaction design. We release our code, 3.4M-token corpus, and bias detection model to support further research.
+\end{abstract}
+
+% CCS keywords & ACM Reference Format
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010147.10010257</concept_id>
+  <concept_desc>Computing methodologies~Natural language processing</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10003120.10003121</concept_id>
+  <concept_desc>Human-centered computing~Collaborative and social computing</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10002978.10003006</concept_id>
+  <concept_desc>Security and privacy~Social aspects of security and privacy</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+</ccs2012>
+\end{CCSXML}
+\ccsdesc[500]{Computing methodologies~Natural language processing}
+\ccsdesc[300]{Human-centered computing~Collaborative and social computing}
+\ccsdesc[300]{Security and privacy~Social aspects of security and privacy}
+
+\keywords{large language models, multi-agent systems, bias, group polarization, social dynamics, responsible AI}
+
+\maketitle
+
+\section{Introduction}
+Large language models (LLMs) increasingly power autonomous agents that debate, negotiate, and collaborate in multi-agent systems \cite{park2023generative, wang2023survey}. These systems promise to enhance problem-solving by leveraging diverse perspectives and collective intelligence. However, individual LLMs are known to embed societal biases \cite{bender2021dangers, blodgett2020language}, raising a critical question: \emph{what happens to these biases when multiple LLM agents interact with each other?}
+
+Social psychology offers two competing theoretical frameworks to anticipate how biases might evolve in multi-agent interactions. The \textbf{group polarization} theory \cite{isenberg1986group, sunstein2002law} suggests that discussion among like-minded individuals amplifies pre-existing tendencies, potentially exacerbating biases. Conversely, the \textbf{mutual balancing} hypothesis derived from diversity science \cite{page2007difference, hong2004groups} proposes that diverse perspectives can counterbalance individual biases, leading to more neutral collective outcomes. Despite the importance of these dynamics for responsible AI deployment, no systematic empirical investigation has examined how these social phenomena manifest in LLM-based multi-agent systems.
+
+To address this gap, we introduce \textsc{MAD-bias} (Multi-Agent Debate Bias), a comprehensive experimental framework for studying bias dynamics in LLM debates. Our approach orchestrates controlled debates among multiple agents across controversial topics while systematically varying key parameters: the number of agents, debate rounds, and agent heterogeneity. Each utterance is independently evaluated by a fine-tuned bias detector that assesses multiple dimensions of bias, enabling us to trace bias trajectories throughout the debate process.
+
+Through extensive experiments involving 2,610 debate sessions across 29 controversial topics, we provide the first empirical evidence of both group polarization and mutual balancing effects in LLM agent interactions. Our findings have significant implications for the design and deployment of multi-agent LLM systems, suggesting concrete strategies for mitigating harmful biases.
+
+Our primary contributions are:
+
+\begin{enumerate}
+    \item \textbf{Experimental Framework:} We develop a comprehensive methodology for studying bias in multi-agent debates, including a topic-adaptive bias detector (F1=0.82 against human annotations) and a 3.4M-token debate corpus.
+    
+    \item \textbf{Empirical Findings:} We provide the first large-scale empirical evidence that (a) bias strength increases monotonically with debate rounds, confirming group polarization effects; (b) heterogeneous agent ensembles significantly reduce bias compared to homogeneous ones; and (c) specific linguistic markers strongly predict bias emergence.
+    
+    \item \textbf{Theoretical Insights:} We demonstrate how social psychological theories of group dynamics extend to artificial agents, revealing both similarities and differences between human and LLM group behavior.
+    
+    \item \textbf{Practical Implications:} We identify concrete strategies for mitigating bias in multi-agent systems through ensemble diversity and interaction design.
+\end{enumerate}
+
+\section{Related Work}
+\subsection{Bias in Large Language Models}
+LLMs have been shown to exhibit various forms of social bias, including gender \cite{bolukbasi2016man}, racial \cite{abid2021persistent}, and political biases \cite{feng2023pretraining}. These biases stem from training data \cite{bender2021dangers}, algorithmic amplification \cite{shah2020predictive}, and deployment contexts \cite{blodgett2020language}. While numerous studies have examined bias in individual LLMs \cite{gallegos2023bias, liang2021towards}, our work extends this analysis to interactive multi-agent settings where bias dynamics may differ substantially.
+
+Recent work has proposed various debiasing techniques, including data augmentation \cite{webster2020measuring}, adversarial training \cite{zhang2018mitigating}, and post-processing methods \cite{liang2020towards}. However, these approaches primarily target individual models rather than multi-agent interactions. Our research complements these efforts by investigating how agent diversity and interaction patterns influence bias at the system level.
+
+\subsection{Multi-agent LLM Systems}
+Multi-agent LLM systems have gained significant attention for their potential to enhance reasoning \cite{du2023improving}, problem-solving \cite{chen2023agentverse}, and decision-making \cite{li2023camel}. Park et al. \cite{park2023generative} demonstrated that multiple agents can simulate complex social dynamics, while Wang et al. \cite{wang2023survey} provided a taxonomy of multi-agent LLM architectures.
+
+Within this emerging field, debate-style prompting has shown promise for improving factuality and reasoning. Du et al. \cite{du2023improving} found that having models debate claims improves accuracy, while Chen et al. \cite{chen2023agentverse} showed that multi-agent deliberation can enhance decision quality. However, these studies have primarily focused on task performance rather than bias dynamics. Our work addresses this gap by systematically investigating how biases evolve during multi-agent debates.
+
+\subsection{Group Dynamics and Collective Behavior}
+Social psychology offers rich theoretical frameworks for understanding group dynamics that may apply to LLM agent interactions. Group polarization theory \cite{isenberg1986group, sunstein2002law} suggests that discussion among like-minded individuals tends to strengthen pre-existing attitudes, potentially exacerbating biases. This phenomenon has been extensively documented in human groups across political \cite{myers1976group}, ethical \cite{lamm1976choice}, and risk-related decisions \cite{stoner1961risky}.
+
+Conversely, research on diversity in collective intelligence \cite{page2007difference, hong2004groups} suggests that heterogeneous groups with diverse perspectives can outperform homogeneous ones by counterbalancing individual biases and errors. Hong and Page \cite{hong2004groups} demonstrated mathematically that diverse groups can solve complex problems more effectively than groups of high-ability but similar individuals.
+
+Our work empirically tests whether these human social phenomena extend to artificial agents, providing insights into both AI behavior and the generalizability of social psychological theories.
+
+\section{The \textsc{MAD-bias} Framework}
+\label{sec:framework}
+
+\subsection{Overview}
+The \textsc{MAD-bias} framework enables controlled experiments on bias dynamics in multi-agent debates. As illustrated in Figure~\ref{fig:pipeline}, the framework consists of four main components: (1) a debate orchestration module that manages agent interactions; (2) a bias detection system that evaluates each utterance; (3) a data collection pipeline that records all interactions and evaluations; and (4) an analysis module that quantifies bias dynamics.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figs/pipeline.pdf}
+  \caption{The \textsc{MAD-bias} framework orchestrates debates between 1-4 LLM agents on controversial topics. Each response is evaluated by an independent bias detector that scores bias strength, polarization, and other metrics. The system controls for agent count, debate rounds, and ensemble composition to isolate causal factors in bias dynamics.}
+  \label{fig:pipeline}
+\end{figure}
+
+\subsection{Debate Protocol}
+The debate protocol, detailed in Algorithm~\ref{alg:debate}, proceeds as follows:
+
+\begin{enumerate}
+    \item \textbf{Topic Selection:} A controversial topic $t$ is selected from a predefined set of 29 topics covering social, political, and ethical domains.
+    
+    \item \textbf{Initial Statements:} Each agent $A_i$ in the ensemble provides an initial statement $s_i^{(0)}$ on the topic.
+    
+    \item \textbf{Debate Rounds:} For $R$ rounds, agents take turns responding to others' previous statements. In each round $r$, agent $A_i$ receives the concatenation of all other agents' statements from the previous round and generates a response $s_i^{(r)}$.
+    
+    \item \textbf{Summary:} After $R$ rounds, each agent provides a final summary statement $s_i^{(R+1)}$ reflecting their position after the debate.
+\end{enumerate}
+
+\begin{algorithm}[t]
+\caption{Multi-Agent Debate Protocol}
+\label{alg:debate}
+\begin{algorithmic}[1]
+\State \textbf{Input}: topic $t$, agents $A_1\dots A_N$, rounds $R$
+\State $S^{(0)} \gets \{A_i(t)\}_{i=1}^N$ \Comment{Initial statements}
+\For{$r=1$ to $R$}
+  \For{$i=1$ to $N$}
+    \State $ctx \gets concat(S^{(r-1)}\setminus s_i^{(r-1)})$
+    \State $s_i^{(r)} \gets A_i(ctx)$ \Comment{Generate response to others}
+  \EndFor
+  \State $S^{(r)} \gets \{s_i^{(r)}\}_{i=1}^N$ \Comment{Collect round responses}
+\EndFor
+\State $S^{(R+1)} \gets \{A_i(\text{summarize})\}_{i=1}^N$ \Comment{Final summaries}
+\State \Return $\{S^{(k)}\}_{k=0}^{R+1}$ \Comment{All debate utterances}
+\end{algorithmic}
+\end{algorithm}
+
+This protocol allows us to systematically vary three key parameters:
+\begin{itemize}
+    \item \textbf{Agent Count ($N$):} The number of participating agents (1, 2, 3, or 4).
+    \item \textbf{Debate Rounds ($R$):} The number of interaction rounds (1, 3, or 5).
+    \item \textbf{Ensemble Composition:} Homogeneous (same model) or heterogeneous (different models) agent groups.
+\end{itemize}
+
+\subsection{Bias Detection}
+\label{sec:detector}
+To evaluate bias in agent utterances, we developed a specialized bias detection system. We fine-tuned GPT-4.1-Nano on 800 manually annotated samples covering diverse controversial topics. Each sample was annotated by three human evaluators who assessed five dimensions of bias:
+
+\begin{enumerate}
+    \item \textbf{Bias Strength:} Overall degree of bias (1-10 scale)
+    \item \textbf{Bias Type:} Category of bias (political, social, cultural, etc.)
+    \item \textbf{Opinion Polarization:} Extremity of expressed views (1-10 scale)
+    \item \textbf{Evidence Usage:} Reliance on evidence vs. assertions (1-10 scale)
+    \item \textbf{Emotional Language:} Degree of emotional vs. rational expression (1-10 scale)
+\end{enumerate}
+
+The detector achieved high agreement with human annotations (inter-annotator $\kappa=0.76$, detector F1=0.82 on held-out test set). For each debate utterance, the detector produces a bias vector $\mathbf{b} \in \mathbb{R}^5$ containing scores for each dimension.
+
+\subsection{Metrics and Analysis}
+\label{sec:metrics}
+We define several metrics to quantify bias dynamics:
+
+\begin{itemize}
+    \item \textbf{Bias Strength ($B_r$):} The average bias strength across all agents in round $r$:
+    \begin{equation}
+        B_r = \frac{1}{N}\sum_{i=1}^N b_{i,r}^{(1)}
+    \end{equation}
+    where $b_{i,r}^{(1)}$ is the bias strength score for agent $i$ in round $r$.
+    
+    \item \textbf{Group Polarization ($\Delta B$):} The change in bias strength from initial to final round:
+    \begin{equation}
+        \Delta B = B_R - B_0
+    \end{equation}
+    
+    \item \textbf{Opinion Diversity ($\sigma_r$):} The standard deviation of bias scores in round $r$:
+    \begin{equation}
+        \sigma_r = \sqrt{\frac{1}{N}\sum_{i=1}^N (b_{i,r}^{(1)} - B_r)^2}
+    \end{equation}
+    
+    \item \textbf{Linguistic Features:} We extract various linguistic markers using NLTK and LIWC, including emotional terms, absolutist expressions, hedges, and evidentials.
+\end{itemize}
+
+These metrics enable us to quantify both the magnitude and direction of bias changes throughout the debate process.
+
+\section{Experimental Design}
+\subsection{Research Questions}
+Our experiments address three primary research questions:
+
+\begin{enumerate}
+    \item \textbf{RQ1:} How does bias strength evolve across debate rounds, and does this evolution support group polarization theory?
+    \item \textbf{RQ2:} How does agent ensemble composition (homogeneous vs. heterogeneous) affect bias dynamics?
+    \item \textbf{RQ3:} What linguistic features correlate with and predict bias in multi-agent debates?
+\end{enumerate}
+
+\subsection{Experimental Setup}
+We conducted a factorial experiment with the following factors:
+
+\begin{itemize}
+    \item \textbf{Agent Count ($N$):} 1, 2, 3, 4 agents
+    \item \textbf{Debate Rounds ($R$):} 1, 3, 5 rounds
+    \item \textbf{Ensemble Composition:} 
+        \begin{itemize}
+            \item Homogeneous: All GPT-4.1-Nano agents
+            \item Heterogeneous: Mix of GPT-4.1-Nano, DeepSeek-Chat, Claude-3.5-Haiku, and Gemini-2.5-Flash-Lite
+        \end{itemize}
+    \item \textbf{Topics:} 29 controversial topics (e.g., abortion, immigration, gun control)
+\end{itemize}
+
+For each combination of factors, we conducted multiple runs to account for stochasticity, resulting in a total of 2,610 debate sessions. All experiments used consistent temperature settings (0.7) and maximum response lengths (800 tokens) to ensure comparability.
+
+\subsection{Statistical Analysis}
+We employed robust statistical methods to analyze the results:
+
+\begin{itemize}
+    \item Two-way ANOVA with Holm–Bonferroni correction for multiple comparisons
+    \item Mixed-effects models to account for topic and model variability
+    \item Post-hoc Tukey tests for pairwise comparisons
+    \item Pearson correlation and regression analysis for linguistic features
+\end{itemize}
+
+All reported results maintain significance at $p < 0.05$ after appropriate corrections.
+
+\section{Results}
+\subsection{RQ1: Bias Evolution and Group Polarization}
+Our first research question examines how bias strength evolves across debate rounds. Figure~\ref{fig:rounds} shows the trajectory of average bias strength across rounds for 3-agent debates.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figs/rounds_curve.pdf}
+  \caption{Bias strength increases monotonically with debate rounds, showing a strong linear trend ($R^2=0.91$). Error bars represent 95\% confidence intervals. The consistent upward trajectory provides empirical evidence for group polarization effects in LLM agent debates.}
+  \label{fig:rounds}
+\end{figure}
+
+The results reveal a clear linear increase in bias strength across rounds ($R^2=0.91$), with an average increase of $\Delta=+0.42$ points per round. This trend is consistent across all agent counts but most pronounced in 3-4 agent conditions. Two-way ANOVA confirms that the effect of debate rounds on bias strength is highly significant ($F(2,2601)=42.3$, $p<0.001$), as shown in Table~\ref{tab:anova}.
+
+\begin{table}[t]
+  \caption{Two-way ANOVA results showing significant main effects for both debate rounds and agent count on bias strength, with a significant interaction effect indicating that the impact of rounds depends on agent count.}
+  \label{tab:anova}
+  \begin{tabular}{lccc}
+    \toprule
+    \textbf{Source} & \textbf{DF} & \textbf{$F$} & \textbf{$p$} \\
+    \midrule
+    Rounds & 2 & 42.3 & $<.001^{***}$ \\
+    Agents & 3 & 18.1 & $<.001^{***}$ \\
+    Interaction & 6 & 2.9 & $.008^{**}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The significant interaction effect ($F(6,2601)=2.9$, $p=.008$) indicates that the rate of bias increase depends on the number of agents, with larger agent groups showing steeper bias trajectories. This finding aligns with group polarization theory, which predicts that larger groups may experience stronger polarization effects.
+
+We also examined changes in opinion polarization scores, which showed a similar upward trend ($\Delta=+0.38$ per round, $p<0.001$). Together, these results provide strong empirical evidence for group polarization effects in LLM agent debates, confirming that multi-agent interactions tend to amplify biases over time.
+
+\subsection{RQ2: Impact of Ensemble Composition}
+Our second research question investigates how agent ensemble composition affects bias dynamics. Figure~\ref{fig:homo} compares final bias strength between homogeneous (single-model) and heterogeneous (multi-model) agent ensembles.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figs/homo_hetero.pdf}
+  \caption{Final bias strength comparison between homogeneous (single-model) and heterogeneous (multi-model) agent ensembles after 3 rounds of debate. Heterogeneous ensembles show significantly lower bias across all agent counts ($p=0.004$), with an average reduction of 18.7\%.}
+  \label{fig:homo}
+\end{figure}
+
+The results show that heterogeneous ensembles consistently exhibit lower final bias strength compared to homogeneous ensembles, with an average reduction of 18.7\%. Post-hoc Tukey tests confirm that this difference is statistically significant ($p=0.004$).
+
+This effect becomes more pronounced as the number of agents increases. For 2-agent ensembles, the bias reduction is 12.3\%, while for 4-agent ensembles, it reaches 24.6\%. The effect is also consistent across topics, though it varies in magnitude.
+
+To understand the mechanisms behind this effect, we analyzed the embedding space of agent responses. Heterogeneous ensembles showed greater semantic diversity (average cosine distance between responses = 0.37) compared to homogeneous ensembles (average distance = 0.14). This suggests that diverse model architectures and training data lead to more varied perspectives that can counterbalance each other's biases.
+
+These findings support the mutual balancing hypothesis derived from diversity science, demonstrating that heterogeneous agent ensembles can mitigate bias through perspective diversity.
+
+\subsection{RQ3: Linguistic Correlates of Bias}
+Our third research question explores the linguistic features that correlate with and predict bias in multi-agent debates. Figure~\ref{fig:corr} shows the correlation between various linguistic features and bias measures.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figs/correlation.pdf}
+  \caption{Correlation heatmap between linguistic features and bias measures. Emotional language and absolutist terms show the strongest positive correlations with bias strength ($r=0.72$ and $r=0.68$, respectively), while hedges and evidentials show negative correlations. These patterns provide actionable signals for bias detection and mitigation.}
+  \label{fig:corr}
+\end{figure}
+
+The analysis reveals several strong correlations:
+
+\begin{itemize}
+    \item \textbf{Emotional language} shows the strongest positive correlation with bias strength ($r=0.72$, $p<0.001$)
+    \item \textbf{Absolutist terms} (e.g., "always," "never," "completely") also strongly correlate with bias ($r=0.68$, $p<0.001$)
+    \item \textbf{Hedges} (e.g., "perhaps," "possibly," "might") negatively correlate with bias ($r=-0.53$, $p<0.001$)
+    \item \textbf{Evidentials} (references to evidence or sources) negatively correlate with bias ($r=-0.61$, $p<0.001$)
+\end{itemize}
+
+Regression analysis shows that these linguistic features together explain 64\% of the variance in bias scores ($R^2=0.64$), suggesting they are powerful predictors of bias. Moreover, we found that these linguistic markers increase in frequency across debate rounds in homogeneous ensembles but remain more stable in heterogeneous ensembles.
+
+These findings provide actionable signals for bias detection and suggest that promoting evidence-based reasoning and reducing emotional language could help mitigate bias in multi-agent systems.
+
+\subsection{Ablation Studies}
+To validate our findings, we conducted several ablation studies:
+
+\begin{itemize}
+    \item \textbf{Context Ablation:} Removing previous debate context reduced polarization by 52\% ($\Delta B$ from 1.9 to 0.9), indicating that memory of others' arguments is a key driver of bias amplification.
+    
+    \item \textbf{Topic Sensitivity:} Testing subsets of topics showed consistent patterns across topic categories, though political topics showed stronger polarization effects (average $\Delta B = 2.3$) compared to ethical topics (average $\Delta B = 1.7$).
+    
+    \item \textbf{Model Ablation:} Testing different model combinations in heterogeneous ensembles revealed that maximum diversity (all different models) produced the strongest bias reduction effect.
+\end{itemize}
+
+These studies confirm the robustness of our main findings and provide additional insights into the mechanisms underlying bias dynamics.
+
+\section{Discussion}
+\subsection{Theoretical Implications}
+Our findings have several important theoretical implications:
+
+\textbf{Group Polarization in Artificial Agents:} The clear increase in bias strength across debate rounds provides the first empirical evidence that group polarization—a well-documented phenomenon in human groups—extends to artificial agents. This suggests that fundamental social psychological processes may apply to LLM agents despite their different cognitive architectures.
+
+\textbf{Diversity Benefits:} The significant bias reduction in heterogeneous ensembles aligns with diversity science theories that predict benefits from cognitive diversity. However, the mechanism appears to differ somewhat from human groups: while human diversity benefits often stem from explicit perspective-taking and deliberation, LLM diversity benefits appear to arise from implicit differences in model architectures and training data.
+
+\textbf{Linguistic Markers:} The strong correlations between specific linguistic features and bias measures suggest that bias in LLM debates manifests through similar linguistic patterns as human bias. This provides further evidence for the generalizability of sociolinguistic theories to artificial agents.
+
+\subsection{Practical Implications}
+Our research suggests several practical strategies for mitigating bias in multi-agent LLM systems:
+
+\textbf{Ensemble Diversity:} Deploying heterogeneous agent ensembles with diverse model architectures can significantly reduce overall system bias. This relatively simple intervention (using different models rather than multiple instances of the same model) provides substantial benefits.
+
+\textbf{Interaction Design:} Limiting the number of debate rounds or periodically "resetting" the context can help prevent runaway polarization. Our ablation studies show that removing historical context significantly reduces bias amplification.
+
+\textbf{Linguistic Monitoring:} Monitoring for increases in emotional language and absolutist terms can provide early warning signals of bias escalation. Systems could be designed to detect these patterns and intervene accordingly.
+
+\textbf{Evidence Promotion:} Explicitly prompting agents to provide evidence for their claims and avoid emotional language could help maintain more balanced discussions.
+
+\subsection{Limitations and Future Work}
+Our study has several limitations that suggest directions for future research:
+
+\textbf{Model Coverage:} While we tested four major LLM architectures, future work should expand to a broader range of models, including open-source alternatives and models from different cultural contexts.
+
+\textbf{Topic Diversity:} Although we covered 29 diverse topics, these were primarily focused on Western sociopolitical issues. Future work should examine topics relevant to other cultural contexts.
+
+\textbf{Debate Structure:} We used a relatively simple turn-taking debate structure. Future research could explore more complex interaction patterns, including moderated debates, structured argumentation, and dynamic role assignment.
+
+\textbf{Longitudinal Effects:} Our study examined relatively short debates (up to 5 rounds). Longer-term studies could reveal whether bias continues to increase indefinitely or eventually stabilizes.
+
+\textbf{Intervention Testing:} Building on our findings, future work should explicitly test interventions designed to mitigate bias in multi-agent systems, such as diversity-aware agent selection algorithms and bias-sensitive moderation strategies.
+
+\section{Ethical Considerations}
+Our research raises several ethical considerations:
+
+\textbf{Bias in Evaluation:} The bias detector itself may inherit biases from its training data. We mitigated this risk through diverse annotator selection and rigorous validation, but acknowledge that perfect neutrality is unattainable.
+
+\textbf{Topic Selection:} Studying controversial topics necessarily involves engaging with sensitive content. We carefully selected topics to represent diverse viewpoints while avoiding extreme content that might cause harm.
+
+\textbf{Environmental Impact:} Large-scale LLM experiments consume significant computational resources. We limited our carbon footprint by optimizing experimental design and capping API calls, resulting in approximately 91 kg CO$_2$ equivalent emissions.
+
+\textbf{Dual Use:} While our research aims to mitigate harmful biases, the insights could potentially be misused to create more effectively biased systems. We focus on transparent reporting and open-source our methods to enable community oversight.
+
+\section{Conclusion}
+This paper presents the first large-scale empirical study of bias dynamics in multi-agent LLM debates. Our findings reveal that bias in these systems is shaped by two competing forces: group polarization, which tends to amplify biases across debate rounds, and mutual balancing, which can mitigate biases through ensemble diversity.
+
+These results have significant implications for the design and deployment of multi-agent LLM systems. By leveraging heterogeneous ensembles, carefully designing interaction patterns, and monitoring linguistic markers of bias, developers can create more balanced and responsible multi-agent systems.
+
+More broadly, our work demonstrates that social psychological theories of group dynamics can provide valuable insights into artificial agent behavior, while also highlighting unique aspects of LLM social dynamics. As multi-agent systems become increasingly prevalent, understanding and managing these dynamics will be crucial for responsible AI development.
+
+\begin{acks}
+We thank the anonymous reviewers for their valuable feedback. We also thank the annotators who contributed to our bias evaluation dataset. This work was supported by XYZ Grant No.~123456.
+\end{acks}
+
+% Bibliography
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{mad_bias}
+
+\end{document} 

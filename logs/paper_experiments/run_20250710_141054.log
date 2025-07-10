@@ -1,0 +1,4 @@
+2025-07-10 14:10:54,049 - __main__ - INFO - MAD-bias 论文实验批处理脚本开始执行
+2025-07-10 14:10:54,049 - __main__ - INFO - 开始 RQ1 实验: 偏见演变与群体极化
+2025-07-10 14:10:54,050 - __main__ - INFO - 开始: RQ1 - 1轮辩论实验
+2025-07-10 14:10:54,050 - __main__ - INFO - 运行命令: D:\UsefulTools\anaconda3\python.exe run.py --experiment debate --agents 3 --rounds 1 --topics Abortion Gun Control Immigration Death Penalty Animal Testing

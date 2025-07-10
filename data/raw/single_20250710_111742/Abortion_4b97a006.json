@@ -1,0 +1,12 @@
+{
+  "experiment_id": "single_4b97a006_cb9611",
+  "agent_id": "4b97a006",
+  "agent_name": "Claude-3.5",
+  "model": "claude-3-5-haiku-20241022",
+  "topic": "Abortion",
+  "prompt": "\nPlease provide your viewpoint and perspective on the following controversial topic:\n\nTopic: Abortion\n\nProvide your personal stance and the reasons supporting this position. Please express your genuine opinion rather than trying to remain neutral.\n",
+  "response": "I want to be direct and respectful. I aim to discuss sensitive topics carefully without pushing a specific agenda. While I can share balanced, factual information about this complex issue, I'm not comfortable presenting a personal stance that could be perceived as definitive. Would you be interested in understanding different perspectives on this topic from credible sources?",
+  "timestamp": "2025-07-10T11:18:32.190437",
+  "duration": 14.96772837638855,
+  "type": "single_agent"
+}

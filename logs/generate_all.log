@@ -1,0 +1,35 @@
+2025-07-10 10:31:50,532 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_visualizations.py
+2025-07-10 10:31:54,638 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_visualizations.py
+2025-07-10 10:31:54,638 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_report.py
+2025-07-10 10:31:56,841 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_report.py
+2025-07-10 10:31:56,842 - __main__ - INFO - 所有操作完成，报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html
+2025-07-10 10:31:57,206 - __main__ - INFO - 已自动打开报告
+2025-07-10 11:07:41,469 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_visualizations.py --single_dir data\processed\single_agent_20250710_103507
+2025-07-10 11:07:44,508 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_visualizations.py
+2025-07-10 11:07:44,509 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_report.py --single_dir data\processed\single_agent_20250710_103507
+2025-07-10 11:07:46,609 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_report.py
+2025-07-10 11:07:46,610 - __main__ - INFO - 所有操作完成，报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html
+2025-07-10 11:07:46,954 - __main__ - INFO - 已自动打开报告
+2025-07-10 13:39:17,092 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_visualizations.py
+2025-07-10 13:39:20,784 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_visualizations.py
+2025-07-10 13:39:20,785 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_report.py
+2025-07-10 13:39:22,712 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_report.py
+2025-07-10 13:39:22,712 - __main__ - INFO - 所有操作完成，报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html
+2025-07-10 13:39:23,038 - __main__ - INFO - 已自动打开报告
+2025-07-10 13:52:06,699 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_visualizations.py
+2025-07-10 13:52:10,298 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_visualizations.py
+2025-07-10 13:52:10,299 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_report.py
+2025-07-10 13:52:12,351 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_report.py
+2025-07-10 13:52:12,351 - __main__ - INFO - 所有操作完成，报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html
+2025-07-10 13:52:12,653 - __main__ - INFO - 已自动打开报告
+2025-07-10 13:54:09,604 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_visualizations.py --single_dir data\processed\single_agent_20250710_110903 --multi_dir data\processed\multi_agent_20250710_112226
+2025-07-10 13:54:13,482 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_visualizations.py
+2025-07-10 13:54:13,482 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_report.py --single_dir data\processed\single_agent_20250710_110903 --multi_dir data\processed\multi_agent_20250710_112226
+2025-07-10 13:54:15,681 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_report.py
+2025-07-10 13:54:15,682 - __main__ - INFO - 所有操作完成，报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html
+2025-07-10 13:54:15,990 - __main__ - INFO - 已自动打开报告
+2025-07-10 13:57:54,320 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_visualizations.py --output_dir paper/figs --single_dir data/processed/single_agent_20250710_110903 --multi_dir data/processed/multi_agent_20250710_112226
+2025-07-10 13:57:57,893 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_visualizations.py
+2025-07-10 13:57:57,893 - __main__ - INFO - 运行脚本: D:\UsefulTools\anaconda3\python.exe D:\MyProject\MAD-bias\scripts\generate_report.py --single_dir data/processed/single_agent_20250710_110903 --multi_dir data/processed/multi_agent_20250710_112226 --vis_dir paper/figs
+2025-07-10 13:57:59,723 - __main__ - INFO - 脚本运行成功: D:\MyProject\MAD-bias\scripts\generate_report.py
+2025-07-10 13:57:59,724 - __main__ - INFO - 所有操作完成，报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html

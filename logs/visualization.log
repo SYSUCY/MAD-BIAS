@@ -1,0 +1,129 @@
+2025-07-10 10:26:57,896 - __main__ - INFO - 开始生成单智能体实验可视化图表
+2025-07-10 10:26:57,904 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 3 条记录
+2025-07-10 10:26:58,789 - __main__ - INFO - 已生成模型偏见对比图
+2025-07-10 10:26:59,098 - __main__ - INFO - 已生成话题偏见对比图
+2025-07-10 10:26:59,098 - __main__ - INFO - 单智能体实验可视化图表生成完成
+2025-07-10 10:26:59,098 - __main__ - INFO - 开始生成多智能体实验可视化图表
+2025-07-10 10:26:59,102 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 6 条记录
+2025-07-10 10:26:59,115 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:26:59,120 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:26:59,136 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:26:59,138 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:26:59,423 - __main__ - INFO - 已生成智能体数量与偏见强度关系图
+2025-07-10 10:26:59,435 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:26:59,437 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:26:59,460 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:26:59,464 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:26:59,732 - __main__ - INFO - 已生成辩论轮次与偏见强度关系图
+2025-07-10 10:26:59,732 - src.visualization.data_process - WARNING - 未找到有效的偏见演变数据
+2025-07-10 10:26:59,736 - __main__ - INFO - 多智能体实验可视化图表生成完成
+2025-07-10 10:26:59,736 - __main__ - INFO - 可视化图表生成完成
+2025-07-10 10:31:52,589 - __main__ - INFO - 开始生成单智能体实验可视化图表
+2025-07-10 10:31:52,596 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 3 条记录
+2025-07-10 10:31:53,294 - __main__ - INFO - 已生成模型偏见对比图
+2025-07-10 10:31:53,589 - __main__ - INFO - 已生成话题偏见对比图
+2025-07-10 10:31:53,589 - __main__ - INFO - 单智能体实验可视化图表生成完成
+2025-07-10 10:31:53,589 - __main__ - INFO - 开始生成多智能体实验可视化图表
+2025-07-10 10:31:53,601 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 6 条记录
+2025-07-10 10:31:53,607 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:31:53,607 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:31:53,631 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:31:53,633 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:31:53,901 - __main__ - INFO - 已生成智能体数量与偏见强度关系图
+2025-07-10 10:31:53,916 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:31:53,916 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:31:53,937 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:31:53,937 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 10:31:54,206 - __main__ - INFO - 已生成辩论轮次与偏见强度关系图
+2025-07-10 10:31:54,206 - src.visualization.data_process - WARNING - 未找到有效的偏见演变数据
+2025-07-10 10:31:54,206 - __main__ - INFO - 多智能体实验可视化图表生成完成
+2025-07-10 10:31:54,206 - __main__ - INFO - 可视化图表生成完成
+2025-07-10 11:07:43,398 - __main__ - INFO - 开始生成单智能体实验可视化图表
+2025-07-10 11:07:43,402 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 45 条记录
+2025-07-10 11:07:43,816 - __main__ - INFO - 已生成模型偏见对比图
+2025-07-10 11:07:44,177 - __main__ - INFO - 已生成话题偏见对比图
+2025-07-10 11:07:44,178 - __main__ - INFO - 单智能体实验可视化图表生成完成
+2025-07-10 11:07:44,178 - __main__ - INFO - 开始生成多智能体实验可视化图表
+2025-07-10 11:07:44,178 - src.visualization.data_process - ERROR - 未找到多智能体实验数据目录
+2025-07-10 11:07:44,179 - __main__ - ERROR - 未找到有效的多智能体实验数据
+2025-07-10 11:07:44,179 - __main__ - INFO - 可视化图表生成完成
+2025-07-10 13:39:19,044 - __main__ - INFO - 开始生成单智能体实验可视化图表
+2025-07-10 13:39:19,051 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 60 条记录
+2025-07-10 13:39:19,532 - __main__ - INFO - 已生成模型偏见对比图
+2025-07-10 13:39:19,867 - __main__ - INFO - 已生成话题偏见对比图
+2025-07-10 13:39:19,867 - __main__ - INFO - 单智能体实验可视化图表生成完成
+2025-07-10 13:39:19,867 - __main__ - INFO - 开始生成多智能体实验可视化图表
+2025-07-10 13:39:19,869 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 75 条记录
+2025-07-10 13:39:19,882 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:39:19,885 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:39:19,908 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:39:19,911 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:39:20,218 - __main__ - INFO - 已生成智能体数量与偏见强度关系图
+2025-07-10 13:39:20,230 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:39:20,234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:39:20,248 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:39:20,250 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:39:20,530 - __main__ - INFO - 已生成辩论轮次与偏见强度关系图
+2025-07-10 13:39:20,533 - src.visualization.data_process - WARNING - 未找到有效的偏见演变数据
+2025-07-10 13:39:20,533 - __main__ - INFO - 多智能体实验可视化图表生成完成
+2025-07-10 13:39:20,533 - __main__ - INFO - 可视化图表生成完成
+2025-07-10 13:52:08,547 - __main__ - INFO - 开始生成单智能体实验可视化图表
+2025-07-10 13:52:08,552 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 60 条记录
+2025-07-10 13:52:09,006 - __main__ - INFO - 已生成模型偏见对比图
+2025-07-10 13:52:09,357 - __main__ - INFO - 已生成话题偏见对比图
+2025-07-10 13:52:09,357 - __main__ - INFO - 单智能体实验可视化图表生成完成
+2025-07-10 13:52:09,357 - __main__ - INFO - 开始生成多智能体实验可视化图表
+2025-07-10 13:52:09,359 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 30 条记录
+2025-07-10 13:52:09,374 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:52:09,379 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:52:09,396 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:52:09,398 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:52:09,679 - __main__ - INFO - 已生成智能体数量与偏见强度关系图
+2025-07-10 13:52:09,692 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:52:09,696 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:52:09,713 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:52:09,716 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:52:09,997 - __main__ - INFO - 已生成辩论轮次与偏见强度关系图
+2025-07-10 13:52:09,998 - src.visualization.data_process - WARNING - 未找到有效的偏见演变数据
+2025-07-10 13:52:09,998 - __main__ - INFO - 多智能体实验可视化图表生成完成
+2025-07-10 13:52:09,998 - __main__ - INFO - 可视化图表生成完成
+2025-07-10 13:54:11,609 - __main__ - INFO - 开始生成单智能体实验可视化图表
+2025-07-10 13:54:11,614 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 60 条记录
+2025-07-10 13:54:12,083 - __main__ - INFO - 已生成模型偏见对比图
+2025-07-10 13:54:12,443 - __main__ - INFO - 已生成话题偏见对比图
+2025-07-10 13:54:12,443 - __main__ - INFO - 单智能体实验可视化图表生成完成
+2025-07-10 13:54:12,444 - __main__ - INFO - 开始生成多智能体实验可视化图表
+2025-07-10 13:54:12,447 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 30 条记录
+2025-07-10 13:54:12,458 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:54:12,462 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:54:12,480 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:54:12,482 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:54:12,768 - __main__ - INFO - 已生成智能体数量与偏见强度关系图
+2025-07-10 13:54:12,779 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:54:12,783 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:54:12,798 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:54:12,801 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:54:13,098 - __main__ - INFO - 已生成辩论轮次与偏见强度关系图
+2025-07-10 13:54:13,100 - src.visualization.data_process - WARNING - 未找到有效的偏见演变数据
+2025-07-10 13:54:13,100 - __main__ - INFO - 多智能体实验可视化图表生成完成
+2025-07-10 13:54:13,100 - __main__ - INFO - 可视化图表生成完成
+2025-07-10 13:57:56,202 - __main__ - INFO - 开始生成单智能体实验可视化图表
+2025-07-10 13:57:56,207 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 60 条记录
+2025-07-10 13:57:56,631 - __main__ - INFO - 已生成模型偏见对比图
+2025-07-10 13:57:56,963 - __main__ - INFO - 已生成话题偏见对比图
+2025-07-10 13:57:56,963 - __main__ - INFO - 单智能体实验可视化图表生成完成
+2025-07-10 13:57:56,963 - __main__ - INFO - 开始生成多智能体实验可视化图表
+2025-07-10 13:57:56,966 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 30 条记录
+2025-07-10 13:57:56,979 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:57:56,982 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:57:56,998 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:57:57,000 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:57:57,274 - __main__ - INFO - 已生成智能体数量与偏见强度关系图
+2025-07-10 13:57:57,285 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:57:57,288 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:57:57,302 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:57:57,304 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-07-10 13:57:57,581 - __main__ - INFO - 已生成辩论轮次与偏见强度关系图
+2025-07-10 13:57:57,582 - src.visualization.data_process - WARNING - 未找到有效的偏见演变数据
+2025-07-10 13:57:57,582 - __main__ - INFO - 多智能体实验可视化图表生成完成
+2025-07-10 13:57:57,583 - __main__ - INFO - 可视化图表生成完成

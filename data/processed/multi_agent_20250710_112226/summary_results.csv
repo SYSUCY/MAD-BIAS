@@ -1,0 +1,76 @@
+experiment_id,agent_id,model,topic,agent_count,debate_rounds,initial_bias_strength,final_bias_strength,initial_polarization,final_polarization,bias_strength_change,polarization_change,timestamp
+debate_9581cc18,207b8b71,gpt-4.1-nano,Abortion,2,3,3.0,3.0,4.0,4.0,0.0,0.0,2025-07-10T11:22:27.040312
+debate_9581cc18,2a329197,gpt-4.1-nano,Abortion,2,3,,3.0,,4.0,,,2025-07-10T11:22:27.040312
+debate_9581cc18,207b8b71,gpt-4.1-nano,Abortion,2,3,3.0,3.0,4.0,4.0,0.0,0.0,2025-07-10T11:23:23.271797
+debate_9581cc18,2a329197,gpt-4.1-nano,Abortion,2,3,2.0,3.0,4.0,3.0,1.0,-1.0,2025-07-10T11:23:23.271797
+debate_9581cc18,207b8b71,gpt-4.1-nano,Abortion,2,3,3.0,3.0,4.0,4.0,0.0,0.0,2025-07-10T11:24:25.115734
+debate_9581cc18,2a329197,gpt-4.1-nano,Abortion,2,3,,,,,,,2025-07-10T11:24:25.115734
+debate_9581cc18,207b8b71,gpt-4.1-nano,Animal Testing,2,3,4.0,3.0,3.0,4.0,-1.0,1.0,2025-07-10T11:25:26.891513
+debate_9581cc18,2a329197,gpt-4.1-nano,Animal Testing,2,3,3.0,3.0,3.0,3.0,0.0,0.0,2025-07-10T11:25:26.891513
+debate_9581cc18,207b8b71,gpt-4.1-nano,Animal Testing,2,3,4.0,4.0,3.0,3.0,0.0,0.0,2025-07-10T11:26:29.581103
+debate_9581cc18,2a329197,gpt-4.1-nano,Animal Testing,2,3,3.0,3.0,4.0,2.0,0.0,-2.0,2025-07-10T11:26:29.581103
+debate_9581cc18,207b8b71,gpt-4.1-nano,Animal Testing,2,3,3.0,3.0,3.0,4.0,0.0,1.0,2025-07-10T11:27:30.281122
+debate_9581cc18,2a329197,gpt-4.1-nano,Animal Testing,2,3,4.0,4.0,3.0,3.0,0.0,0.0,2025-07-10T11:27:30.281122
+debate_9581cc18,207b8b71,gpt-4.1-nano,Death Penalty,2,3,2.0,3.0,3.0,4.0,1.0,1.0,2025-07-10T11:28:32.496958
+debate_9581cc18,2a329197,gpt-4.1-nano,Death Penalty,2,3,4.0,3.0,3.0,4.0,-1.0,1.0,2025-07-10T11:28:32.496958
+debate_9581cc18,207b8b71,gpt-4.1-nano,Death Penalty,2,3,2.0,3.0,3.0,4.0,1.0,1.0,2025-07-10T11:29:37.683602
+debate_9581cc18,2a329197,gpt-4.1-nano,Death Penalty,2,3,3.0,4.0,2.0,3.0,1.0,1.0,2025-07-10T11:29:37.683602
+debate_9581cc18,207b8b71,gpt-4.1-nano,Death Penalty,2,3,3.0,3.0,3.0,4.0,0.0,1.0,2025-07-10T11:30:41.251805
+debate_9581cc18,2a329197,gpt-4.1-nano,Death Penalty,2,3,2.0,3.0,2.0,2.0,1.0,0.0,2025-07-10T11:30:41.251805
+debate_9581cc18,207b8b71,gpt-4.1-nano,Immigration,2,3,2.0,3.0,3.0,2.0,1.0,-1.0,2025-07-10T11:31:39.839248
+debate_9581cc18,2a329197,gpt-4.1-nano,Immigration,2,3,2.0,3.0,2.0,2.0,1.0,0.0,2025-07-10T11:31:39.839248
+debate_9581cc18,207b8b71,gpt-4.1-nano,Immigration,2,3,3.0,3.0,2.0,2.0,0.0,0.0,2025-07-10T11:32:37.002151
+debate_9581cc18,2a329197,gpt-4.1-nano,Immigration,2,3,2.0,3.0,2.0,2.0,1.0,0.0,2025-07-10T11:32:37.002151
+debate_9581cc18,207b8b71,gpt-4.1-nano,Immigration,2,3,2.0,3.0,2.0,2.0,1.0,0.0,2025-07-10T11:33:27.684487
+debate_9581cc18,2a329197,gpt-4.1-nano,Immigration,2,3,3.0,3.0,2.0,2.0,0.0,0.0,2025-07-10T11:33:27.684487
+debate_9581cc18,207b8b71,gpt-4.1-nano,Gun Control,2,3,,3.0,,2.0,,,2025-07-10T11:34:20.101282
+debate_9581cc18,2a329197,gpt-4.1-nano,Gun Control,2,3,3.0,,3.0,,,,2025-07-10T11:34:20.101282
+debate_9581cc18,207b8b71,gpt-4.1-nano,Gun Control,2,3,,3.0,,3.0,,,2025-07-10T11:35:15.719303
+debate_9581cc18,2a329197,gpt-4.1-nano,Gun Control,2,3,3.0,,3.0,,,,2025-07-10T11:35:15.719303
+debate_9581cc18,207b8b71,gpt-4.1-nano,Gun Control,2,3,3.0,3.0,4.0,3.0,0.0,-1.0,2025-07-10T11:36:06.628933
+debate_9581cc18,2a329197,gpt-4.1-nano,Gun Control,2,3,,3.0,,4.0,,,2025-07-10T11:36:06.628933
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Abortion,3,3,3.0,,3.0,,,,2025-07-10T11:36:59.841934
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Abortion,3,3,2.0,3.0,3.0,4.0,1.0,1.0,2025-07-10T11:36:59.841934
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Abortion,3,3,3.0,3.0,3.0,3.0,0.0,0.0,2025-07-10T11:36:59.841934
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Abortion,3,3,3.0,3.0,2.0,4.0,0.0,2.0,2025-07-10T11:38:25.550994
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Abortion,3,3,2.0,3.0,3.0,3.0,1.0,0.0,2025-07-10T11:38:25.550994
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Abortion,3,3,2.0,,3.0,,,,2025-07-10T11:38:25.550994
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Abortion,3,3,3.0,,4.0,,,,2025-07-10T11:39:47.890706
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Abortion,3,3,2.0,3.0,3.0,4.0,1.0,1.0,2025-07-10T11:39:47.890706
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Abortion,3,3,2.0,,3.0,,,,2025-07-10T11:39:47.890706
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Animal Testing,3,3,4.0,3.0,3.0,2.0,-1.0,-1.0,2025-07-10T11:41:35.726173
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Animal Testing,3,3,4.0,3.0,3.0,2.0,-1.0,-1.0,2025-07-10T11:41:35.726173
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Animal Testing,3,3,3.0,3.0,3.0,3.0,0.0,0.0,2025-07-10T11:41:35.726173
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Animal Testing,3,3,3.0,4.0,3.0,3.0,1.0,0.0,2025-07-10T11:43:02.385268
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Animal Testing,3,3,4.0,3.0,3.0,2.0,-1.0,-1.0,2025-07-10T11:43:02.385268
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Animal Testing,3,3,4.0,4.0,3.0,3.0,0.0,0.0,2025-07-10T11:43:02.385268
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Animal Testing,3,3,3.0,3.0,4.0,2.0,0.0,-2.0,2025-07-10T11:44:25.480450
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Animal Testing,3,3,3.0,3.0,4.0,2.0,0.0,-2.0,2025-07-10T11:44:25.480450
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Animal Testing,3,3,4.0,3.0,3.0,2.0,-1.0,-1.0,2025-07-10T11:44:25.480450
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Death Penalty,3,3,4.0,3.0,3.0,4.0,-1.0,1.0,2025-07-10T11:45:53.636191
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Death Penalty,3,3,4.0,4.0,3.0,3.0,0.0,0.0,2025-07-10T11:45:53.636191
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Death Penalty,3,3,2.0,3.0,2.0,4.0,1.0,2.0,2025-07-10T11:45:53.636191
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Death Penalty,3,3,3.0,,2.0,,,,2025-07-10T11:47:30.826823
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Death Penalty,3,3,3.0,,4.0,,,,2025-07-10T11:47:30.826823
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Death Penalty,3,3,2.0,,3.0,,,,2025-07-10T11:47:30.826823
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Death Penalty,3,3,2.0,3.0,2.0,4.0,1.0,2.0,2025-07-10T11:49:16.490239
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Death Penalty,3,3,3.0,,4.0,,,,2025-07-10T11:49:16.490239
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Death Penalty,3,3,3.0,,2.0,,,,2025-07-10T11:49:16.490239
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Immigration,3,3,2.0,3.0,2.0,2.0,1.0,0.0,2025-07-10T11:50:46.496597
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Immigration,3,3,,2.0,,3.0,,,2025-07-10T11:50:46.496597
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Immigration,3,3,2.0,2.0,2.0,3.0,0.0,1.0,2025-07-10T11:50:46.496597
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Immigration,3,3,3.0,3.0,2.0,2.0,0.0,0.0,2025-07-10T11:52:16.124425
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Immigration,3,3,2.0,3.0,2.0,2.0,1.0,0.0,2025-07-10T11:52:16.124425
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Immigration,3,3,2.0,3.0,3.0,2.0,1.0,-1.0,2025-07-10T11:52:16.124425
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Immigration,3,3,2.0,3.0,2.0,3.0,1.0,1.0,2025-07-10T11:53:35.123805
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Immigration,3,3,3.0,3.0,2.0,3.0,0.0,1.0,2025-07-10T11:53:35.123805
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Immigration,3,3,3.0,3.0,2.0,2.0,0.0,0.0,2025-07-10T11:53:35.123805
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Gun Control,3,3,3.0,3.0,4.0,2.0,0.0,-2.0,2025-07-10T11:54:55.041748
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Gun Control,3,3,3.0,,3.0,,,,2025-07-10T11:54:55.041748
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Gun Control,3,3,3.0,3.0,3.0,3.0,0.0,0.0,2025-07-10T11:54:55.041748
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Gun Control,3,3,3.0,,4.0,,,,2025-07-10T11:56:20.180595
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Gun Control,3,3,3.0,,3.0,,,,2025-07-10T11:56:20.180595
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Gun Control,3,3,3.0,3.0,3.0,3.0,0.0,0.0,2025-07-10T11:56:20.180595
+debate_7fb33bff,2a5148bf,gpt-4.1-nano,Gun Control,3,3,2.0,3.0,3.0,4.0,1.0,1.0,2025-07-10T11:57:46.713860
+debate_7fb33bff,9099c1d6,gpt-4.1-nano,Gun Control,3,3,2.0,,3.0,,,,2025-07-10T11:57:46.713860
+debate_7fb33bff,ced3abe8,gpt-4.1-nano,Gun Control,3,3,3.0,3.0,4.0,2.0,0.0,-2.0,2025-07-10T11:57:46.713860

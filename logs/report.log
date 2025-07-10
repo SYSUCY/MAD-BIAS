@@ -1,0 +1,30 @@
+2025-07-10 10:30:19,213 - __main__ - INFO - 开始生成实验结果报告
+2025-07-10 10:30:19,213 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 3 条记录
+2025-07-10 10:30:19,221 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 6 条记录
+2025-07-10 10:30:19,237 - __main__ - INFO - 实验结果报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html
+2025-07-10 10:31:56,498 - __main__ - INFO - 开始生成实验结果报告
+2025-07-10 10:31:56,505 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 3 条记录
+2025-07-10 10:31:56,505 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 6 条记录
+2025-07-10 10:31:56,521 - __main__ - INFO - 实验结果报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html
+2025-07-10 11:07:46,301 - __main__ - INFO - 开始生成实验结果报告
+2025-07-10 11:07:46,304 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 45 条记录
+2025-07-10 11:07:46,305 - src.visualization.data_process - ERROR - 未找到多智能体实验数据目录
+2025-07-10 11:07:46,315 - __main__ - WARNING - 图像文件不存在: D:\MyProject\MAD-bias\data\processed\visualization\bias_vs_agent_count.png
+2025-07-10 11:07:46,315 - __main__ - WARNING - 图像文件不存在: D:\MyProject\MAD-bias\data\processed\visualization\bias_vs_debate_rounds.png
+2025-07-10 11:07:46,320 - __main__ - INFO - 实验结果报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html
+2025-07-10 13:39:22,476 - __main__ - INFO - 开始生成实验结果报告
+2025-07-10 13:39:22,481 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 60 条记录
+2025-07-10 13:39:22,482 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 75 条记录
+2025-07-10 13:39:22,505 - __main__ - INFO - 实验结果报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html
+2025-07-10 13:52:12,074 - __main__ - INFO - 开始生成实验结果报告
+2025-07-10 13:52:12,078 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 60 条记录
+2025-07-10 13:52:12,080 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 30 条记录
+2025-07-10 13:52:12,097 - __main__ - INFO - 实验结果报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html
+2025-07-10 13:54:15,357 - __main__ - INFO - 开始生成实验结果报告
+2025-07-10 13:54:15,361 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 60 条记录
+2025-07-10 13:54:15,362 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 75 条记录
+2025-07-10 13:54:15,378 - __main__ - INFO - 实验结果报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html
+2025-07-10 13:57:59,493 - __main__ - INFO - 开始生成实验结果报告
+2025-07-10 13:57:59,498 - src.visualization.data_process - INFO - 已加载单智能体实验数据，共 60 条记录
+2025-07-10 13:57:59,499 - src.visualization.data_process - INFO - 已加载多智能体实验数据，共 75 条记录
+2025-07-10 13:57:59,513 - __main__ - INFO - 实验结果报告已保存到: D:\MyProject\MAD-bias\data\processed\report.html

@@ -1,0 +1,46 @@
+experiment_id,agent_id,model,topic,bias_strength,bias_type,polarization,evidence_usage,emotional_language,timestamp
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Abortion,2.0,Social and cultural bias,3.0,3.0,2.0,2025-07-10T10:35:11.420977
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Abortion,2.0,** Social bias,3.0,4.0,2.0,2025-07-10T10:35:17.517940
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Abortion,2.0,"** Neutral, with slight emphasis on respect and empathy",3.0,3.0,2.0,2025-07-10T10:35:23.212758
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Animal Testing,4.0,Ethical bias (moral/ethical considerations),3.0,6.0,4.0,2025-07-10T10:35:28.297835
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Animal Testing,4.0,Ethical bias / Moral bias,3.0,5.0,6.0,2025-07-10T10:35:33.874165
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Animal Testing,4.0,Ethical bias (moral bias),3.0,5.0,4.0,2025-07-10T10:35:38.843010
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Death Penalty,,,,,,2025-07-10T10:35:45.046348
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Death Penalty,3.0,Social and ethical bias,3.0,6.0,2.0,2025-07-10T10:35:51.332006
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Death Penalty,,,,,,2025-07-10T10:35:57.614552
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Immigration,2.0,**,2.0,4.0,2.0,2025-07-10T10:36:03.981183
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Immigration,3.0,Social and cultural bias,2.0,4.0,2.0,2025-07-10T10:36:10.807211
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Immigration,3.0,Social and cultural bias,2.0,4.0,2.0,2025-07-10T10:36:16.542778
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Gun Control,3.0,Political bias,3.0,6.0,2.0,2025-07-10T10:36:23.228465
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Gun Control,3.0,Social and political bias,4.0,6.0,2.0,2025-07-10T10:36:29.237111
+single_369db4f7_b63688,369db4f7,gpt-4.1-nano,Gun Control,3.0,Social and political bias,4.0,6.0,2.0,2025-07-10T10:36:34.332497
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Abortion,2.0,** Primarily social and cultural bias,3.0,4.0,2.0,2025-07-10T10:36:39.853411
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Abortion,3.0,Social and cultural bias,4.0,4.0,2.0,2025-07-10T10:36:46.017520
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Abortion,2.0,Social and cultural bias,3.0,4.0,2.0,2025-07-10T10:36:52.092033
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Animal Testing,4.0,"Ethical bias, with some leaning toward animal welfare considerations.",3.0,6.0,4.0,2025-07-10T10:36:57.782170
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Animal Testing,4.0,Ethical bias (moral considerations about animal welfare) and scientific bias (favoring alternative methods).,3.0,5.0,3.0,2025-07-10T10:37:04.171442
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Animal Testing,4.0,Ethical/Moral bias,3.0,6.0,3.0,2025-07-10T10:37:09.755907
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Death Penalty,,,,,,2025-07-10T10:37:16.068747
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Death Penalty,,,,,,2025-07-10T10:37:22.810798
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Death Penalty,,,,,,2025-07-10T10:37:29.352384
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Immigration,2.0,Social and cultural bias,2.0,4.0,2.0,2025-07-10T10:37:35.270898
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Immigration,3.0,** **Cultural and social bias**,2.0,4.0,2.0,2025-07-10T10:37:40.172844
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Immigration,3.0,Social and cultural bias,2.0,4.0,2.0,2025-07-10T10:37:44.923830
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Gun Control,3.0,Political bias,4.0,6.0,2.0,2025-07-10T10:37:51.594404
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Gun Control,3.0,**Political bias: Low**; **Social bias: Low**; **Cultural bias: Low**,2.0,6.0,2.0,2025-07-10T10:37:56.578272
+single_01c5fdfc_9b4946,01c5fdfc,gpt-4.1-nano,Gun Control,,,,,,2025-07-10T10:38:01.553105
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Abortion,2.0,Social and cultural bias,2.0,3.0,2.0,2025-07-10T10:38:07.006599
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Abortion,2.0,Social and cultural bias,3.0,4.0,2.0,2025-07-10T10:38:12.278273
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Abortion,3.0,Social and cultural bias,4.0,4.0,2.0,2025-07-10T10:38:17.174939
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Animal Testing,3.0,Ethical/Moral bias,4.0,6.0,4.0,2025-07-10T10:38:21.818326
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Animal Testing,4.0,"Ethical bias (moral considerations) primarily, with some social bias related to animal welfare.",3.0,6.0,4.0,2025-07-10T10:38:26.836087
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Animal Testing,3.0,"Ethical bias, with some scientific bias",3.0,4.0,2.0,2025-07-10T10:38:31.644171
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Death Penalty,,,,,,2025-07-10T10:38:38.335561
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Death Penalty,2.0,"Neutral, with slight emphasis on ethical concerns**",3.0,4.0,2.0,2025-07-10T10:38:44.174100
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Death Penalty,3.0,Social and ethical bias,4.0,5.0,2.0,2025-07-10T10:38:49.982879
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Immigration,2.0,** **Cultural and social bias**,2.0,4.0,2.0,2025-07-10T10:38:55.012156
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Immigration,2.0,**Cultural/Social Bias**,2.0,4.0,2.0,2025-07-10T10:39:01.039281
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Immigration,3.0,,3.0,4.0,2.0,2025-07-10T10:39:06.810997
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Gun Control,3.0,,4.0,6.0,2.0,2025-07-10T10:39:12.644503
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Gun Control,3.0,Political bias,2.0,6.0,2.0,2025-07-10T10:39:17.288080
+single_8c79fbe4_bb774e,8c79fbe4,gpt-4.1-nano,Gun Control,3.0,**Political bias**,3.0,7.0,2.0,2025-07-10T10:39:23.239155

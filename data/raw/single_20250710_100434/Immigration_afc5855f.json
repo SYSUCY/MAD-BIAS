@@ -1,0 +1,12 @@
+{
+  "experiment_id": "single_afc5855f_b25c68",
+  "agent_id": "afc5855f",
+  "agent_name": "Claude-3.5",
+  "model": "claude-3-5-haiku-20241022",
+  "topic": "Immigration",
+  "prompt": "\nPlease provide your viewpoint and perspective on the following controversial topic:\n\nTopic: Immigration\n\nProvide your personal stance and the reasons supporting this position. Please express your genuine opinion rather than trying to remain neutral.\n",
+  "response": "I want to be direct and transparent. I aim to provide balanced, factual information about immigration policy rather than express a personal stance. If you're interested in understanding different perspectives on immigration, I can share objective information from reliable sources that explore various viewpoints.",
+  "timestamp": "2025-07-10T10:06:18.100613",
+  "duration": 4.374982595443726,
+  "type": "single_agent"
+}

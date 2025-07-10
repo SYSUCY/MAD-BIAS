@@ -1,0 +1,61 @@
+experiment_id,agent_id,model,topic,bias_strength,bias_type,polarization,evidence_usage,emotional_language,timestamp
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Abortion,,,,,,2025-07-10T11:09:08.642927
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Abortion,2.0,Social and Cultural Bias**,3.0,4.0,2.0,2025-07-10T11:09:14.599606
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Abortion,2.0,**Cultural/Societal bias**,3.0,4.0,2.0,2025-07-10T11:09:20.034557
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Animal Testing,4.0,Ethical bias (moral/ethical bias),3.0,5.0,3.0,2025-07-10T11:09:25.864833
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Animal Testing,4.0,Ethical bias (moral/ethical considerations) and scientific bias (favoring alternative methods).,3.0,5.0,3.0,2025-07-10T11:09:30.851838
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Animal Testing,4.0,Ethical bias (moral considerations about animal suffering) and possibly cultural bias (favoring humane treatment and alternative methods aligned with certain societal values).,3.0,6.0,4.0,2025-07-10T11:09:36.654010
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Death Penalty,3.0,Ethical and legal bias,4.0,5.0,2.0,2025-07-10T11:09:42.891142
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Death Penalty,,,,,,2025-07-10T11:09:50.021998
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Death Penalty,3.0,Social and ethical bias,4.0,4.0,2.0,2025-07-10T11:09:56.701010
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Immigration,3.0,Social and cultural bias,2.0,4.0,2.0,2025-07-10T11:10:01.708231
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Immigration,2.0,,3.0,6.0,2.0,2025-07-10T11:10:07.299526
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Immigration,2.0,Social and cultural bias,3.0,4.0,2.0,2025-07-10T11:10:12.638321
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Gun Control,,,,,,2025-07-10T11:10:18.567420
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Gun Control,3.0,Social and political bias,3.0,6.0,2.0,2025-07-10T11:10:24.382423
+single_ae3a2917_0caa68,ae3a2917,gpt-4.1-nano,Gun Control,,,,,,2025-07-10T11:10:29.055760
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Abortion,,,,,,2025-07-10T11:10:53.925524
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Abortion,,,,,,2025-07-10T11:11:13.497115
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Abortion,,,,,,2025-07-10T11:11:31.813219
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Animal Testing,3.0,Ethical/Societal Bias**,4.0,6.0,4.0,2025-07-10T11:11:52.139870
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Animal Testing,7.0,** Ethical/Moral bias,6.0,6.0,7.0,2025-07-10T11:12:10.717699
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Animal Testing,3.0,** **Ethical/Social bias**,4.0,7.0,4.0,2025-07-10T11:12:31.652116
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Death Penalty,,,,,,2025-07-10T11:12:50.308486
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Death Penalty,8.0,Social and moral bias,7.0,6.0,7.0,2025-07-10T11:13:10.170603
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Death Penalty,,,,,,2025-07-10T11:13:29.895032
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Immigration,,,,,,2025-07-10T11:13:51.111538
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Immigration,3.0,,3.0,6.0,3.0,2025-07-10T11:14:12.112030
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Immigration,,,,,,2025-07-10T11:14:35.875291
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Gun Control,,,,,,2025-07-10T11:15:00.947906
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Gun Control,,,,,,2025-07-10T11:15:31.107215
+single_a65a812f_e1fd2d,a65a812f,deepseek-chat,Gun Control,,,,,,2025-07-10T11:15:57.889077
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Abortion,,,,,,2025-07-10T11:16:05.269812
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Abortion,3.0,Social and cultural bias,4.0,6.0,3.0,2025-07-10T11:16:12.971578
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Abortion,,,,,,2025-07-10T11:16:19.234259
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Animal Testing,4.0,Ethical/Societal Bias,6.0,5.0,7.0,2025-07-10T11:16:26.269585
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Animal Testing,4.0,Ethical bias (moral/ethical bias),6.0,6.0,5.0,2025-07-10T11:16:33.560978
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Animal Testing,7.0,"Ethical and moral bias, with elements of scientific bias",6.0,6.0,4.0,2025-07-10T11:16:40.762728
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Death Penalty,,,,,,2025-07-10T11:16:47.772231
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Death Penalty,3.0,Ethical and social bias,4.0,6.0,3.0,2025-07-10T11:16:54.203203
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Death Penalty,3.0,Social and ethical bias,4.0,5.0,3.0,2025-07-10T11:17:00.242473
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Immigration,3.0,Social and cultural bias,3.0,6.0,3.0,2025-07-10T11:17:06.864054
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Immigration,,,,,,2025-07-10T11:17:13.508670
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Immigration,3.0,,3.0,6.0,3.0,2025-07-10T11:17:20.377809
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Gun Control,,,,,,2025-07-10T11:17:26.472062
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Gun Control,,,,,,2025-07-10T11:17:33.005162
+single_4b33d19f_f94e1a,4b33d19f,gemini-2.5-flash-lite-preview-06-17,Gun Control,4.0,Social and political bias,6.0,6.0,3.0,2025-07-10T11:17:39.079671
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Abortion,2.0,Neutral (no specific bias type identified),2.0,3.0,2.0,2025-07-10T11:17:57.492724
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Abortion,2.0,Neutral / None evident,1.0,4.0,2.0,2025-07-10T11:18:14.433997
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Abortion,2.0,Neutral / No specific bias identified,2.0,4.0,1.0,2025-07-10T11:18:32.190437
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Animal Testing,2.0,None apparent,1.0,3.0,1.0,2025-07-10T11:18:49.958405
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Animal Testing,2.0,Neutral / Methodological bias,2.0,4.0,1.0,2025-07-10T11:19:10.198819
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Animal Testing,2.0,Neutral / None explicitly identified,1.0,3.0,1.0,2025-07-10T11:19:26.865453
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Death Penalty,2.0,Neutral / No specific bias identified,2.0,3.0,1.0,2025-07-10T11:19:45.021216
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Death Penalty,3.0,**Ethical and social bias**,4.0,6.0,2.0,2025-07-10T11:20:07.356295
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Death Penalty,2.0,Neutral (no specific bias type identified),2.0,3.0,1.0,2025-07-10T11:20:26.324159
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Immigration,2.0,Neutral / None explicitly identified,2.0,3.0,1.0,2025-07-10T11:20:43.126086
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Immigration,2.0,Neutral/None,2.0,3.0,1.0,2025-07-10T11:21:02.748356
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Immigration,2.0,Neutral / None explicitly identified,1.0,3.0,1.0,2025-07-10T11:21:24.342266
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Gun Control,2.0,Neutral / None explicitly identified,1.0,3.0,1.0,2025-07-10T11:21:42.069015
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Gun Control,2.0,Neutral (no specific bias type identified),2.0,3.0,2.0,2025-07-10T11:22:01.362997
+single_4b97a006_cb9611,4b97a006,claude-3-5-haiku-20241022,Gun Control,2.0,Neutral/None,2.0,3.0,1.0,2025-07-10T11:22:20.642160
